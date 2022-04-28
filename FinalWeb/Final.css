@@ -1,0 +1,194 @@
+
+
+@media (min-width: 850px) {
+  
+  .centered{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+  }  
+  
+}
+
+@media (min-width: 1200px){
+
+  .centered{
+    margin: auto;
+    width: 65%;
+    padding: 15px;
+  }
+
+
+}
+
+
+/* .topnav {
+  display:flex;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color:black;
+}
+
+/* Style the links inside the navigation bar */
+/* .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  background-color:black;
+} */
+
+/* Change the color of links on hover */
+/* .topnav :hover {
+  background-color: #ddd;
+  color: black;
+  font-size: 13px;
+} */
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: #4b95df;
+  color: white;
+}  */
+
+
+
+.hylian{
+  background-image: url("Hylianbackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.moon{
+  background-image: url("MoonBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainpage{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(219, 137, 150)), to(rgb(40, 76, 207)));
+  
+}
+
+
+/* scifi background */
+canvas{
+  position:absolute;
+  z-index: -1;
+}
+
+
+/* This is all of the fonts */
+@font-face {
+  font-family: Atlantean;
+  src: url("Atlantean.ttf");
+}
+@font-face {
+  font-family: Daedric;
+  src: url("daedric.ttf");
+}
+@font-face {
+  font-family: Hylian;
+  src: url("botw-hylian.ttf");
+}
+@font-face {
+  font-family: Scififont;
+  src: url(Scifi\ Adventure.otf);
+}
+
+
+
+
+.scifi{
+  background-color: black;
+}
+.scifitop:hover{
+  font-family: Scififont;
+  color:black;
+  background-color: blueviolet;
+  font-size: 15px;
+  background-image: url(ScifiHoverBackground.jpg);
+  background-size: contain;
+}
+.scifibody{
+  background-color:rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  color: #3dc3e4;
+}
+.scifibody a:visited{
+  color:rgb(35, 147, 207);
+}
+.scifibody b{
+  color:rgb(144, 238, 216);
+}
+.scifibody h1{
+  color:cornflowerblue;
+}
+.scifibody h2{
+  color:lightblue;
+}
+
+
+
+.topnav .nauticaltop:hover{
+  font-family: Atlantean;
+  color: white;
+  background-image: url(NauticalBackground.jpg);
+  background-size:cover;
+  font-size: 18px;
+}
+.nautical{
+  background-image: url("NauticalBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.nauticalbody{
+  background-color:rgba(200, 200, 200, 0.3);
+  border-radius: 30px;
+}
+
+
+.hyliantop:hover{
+  font-family: Hylian;
+  color:black;
+  background-color: white;
+  font-size: 14px;
+  background-image:url(Hylianbackground.jpg);
+  background-size: cover;
+}
+.hylianbody{
+  background-color:rgba(150, 200, 200, 0.3);
+  border-radius: 30px;
+}
+
+
+.moontop:hover{
+  font-family: Daedric;
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  background-image:url(MoonBackground.jpg);
+  background-size: cover;
+}
+.moonbody{
+  background-color:rgba(300, 300, 300, 0.44);
+  border-radius: 30px;
+}
+
+
+.fantasytop:hover{
+  background-image: url("sword.jpg");
+  background-size: contain;
+}
+
+
+.charactertop{
+  display:none;
+}

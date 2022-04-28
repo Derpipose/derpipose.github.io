@@ -1,0 +1,47 @@
+UPDATE: I am about a third of the way done with everything that needs to be done. I have about half 
+of the HTML Elements done, attributes and should be done wiht all of the css requirements but will be 
+adding more. My JS is coming along and I am hoping to implement a C# way to parse a CSV file to allow
+for one of my programs to be implemented for the site. I still plan on using Flex box and responsive 
+design. I am still working on a few different things but this is what I have so far. Please excuse the 
+messy program and ill formated styling. Since this is a work in progress, I don't think it needs to be
+stated but I would much rather clear my bases than not. I am excited to see how this turns out and really
+want this to be one of the things that I am able to use in the future. Thank you for reading this and 
+teaching me all that you have. I do really appreciate it!
+Riley
+
+at least 10 different html element types
+Done. Main alone has 10 already and I am not even done with it. 
+Head, body, header, link, nav, img, button, div, p, h1, 
+ 
+at least 10 different html attribute names
+Wrap, width, value, type, style, src, alt, height, name, href
+ 
+at least one image with correct alt attribute
+On both Main page as well as Contact Us
+ 
+at least 10 css rules
+This is done. There is more than 10 rules
+ 
+css flexbox
+The Desktop Navbar
+ 
+css grid
+Used in Main
+ 
+at least 2 media queries (to support mobile and tablet sized displays) on a page
+Used with both Navigation and any of the campaign pages separately. A total of 4 media queries.
+ 
+at least 2 instances where you use javascript add event listener
+Completed in the Nav bar alone. 
+ 
+at least 2 instances where you use document. querySelector or querySelectorAll
+Completed in the Nav bar alone.
+ 
+ajax to interact with an API
+Used for the Resources page
+ 
+a javascript class or javascript modules
+Used for the Nav bar. 
+
+EXTRAS: 
+Frameworks: Cloud Flare
