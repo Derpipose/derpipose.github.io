@@ -1,87 +1,21 @@
 
-
+/* These are the two main media queries that govern the centering */
 @media (min-width: 850px) {
-  
   .centered{
     margin: auto;
     width: 70%;
     padding: 10px;
   }  
-  
 }
 
 @media (min-width: 1200px){
-
   .centered{
     margin: auto;
     width: 65%;
     padding: 15px;
   }
-
-
 }
 
-
-/* .topnav {
-  display:flex;
-  overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  background-color:black;
-}
-
-/* Style the links inside the navigation bar */
-/* .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  background-color:black;
-} */
-
-/* Change the color of links on hover */
-/* .topnav :hover {
-  background-color: #ddd;
-  color: black;
-  font-size: 13px;
-} */
-
-/* Add a color to the active/current link */
-/* .topnav a.active {
-  background-color: #4b95df;
-  color: white;
-}  */
-
-
-
-.hylian{
-  background-image: url("Hylianbackground.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
-.moon{
-  background-image: url("MoonBackground.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.mainpage{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(219, 137, 150)), to(rgb(40, 76, 207)));
-  
-}
-
-
-/* scifi background */
-canvas{
-  position:absolute;
-  z-index: -1;
-}
 
 
 /* This is all of the fonts */
@@ -104,14 +38,13 @@ canvas{
 
 
 
-
+/* The css that governs the look of the scifi campaign */
 .scifi{
   background-color: black;
 }
+/* This makes it so that when you hover over the top nav scifi tab the font and background change */
 .scifitop:hover{
   font-family: Scififont;
-  color:black;
-  background-color: blueviolet;
   font-size: 15px;
   background-image: url(ScifiHoverBackground.jpg);
   background-size: contain;
@@ -121,21 +54,38 @@ canvas{
   border-radius: 30px;
   color: #3dc3e4;
 }
+/* I want the color on the visited page links to look slightly different but still custom */
 .scifibody a:visited{
   color:rgb(35, 147, 207);
 }
+/* I want stressing of the bolded elements to look different so they are empasized especially well */
 .scifibody b{
   color:rgb(144, 238, 216);
 }
+/* I want the h1 and h2 elements to stand out differently too */
 .scifibody h1{
   color:cornflowerblue;
 }
 .scifibody h2{
   color:lightblue;
 }
+/* Putting the scifi canvas in the background and ensuring that it doesn't create an overflow that can be scrolled to the side.  */
+canvas{
+  position:absolute;
+  z-index: -1;
+  overflow:hidden;
+  width: 99%;
+  
+}
 
 
-
+/* The css that governs the nautical page */
+.nautical{
+  background-image: url("NauticalBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* This makes it so that if you hover over the top nav nautical tab, the font and background change */
 .topnav .nauticaltop:hover{
   font-family: Atlantean;
   color: white;
@@ -143,18 +93,20 @@ canvas{
   background-size:cover;
   font-size: 18px;
 }
-.nautical{
-  background-image: url("NauticalBackground.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-
-}
+/* This gives the text a background that is faintly there, enough to see the text clearly but not completely obscure the background */
 .nauticalbody{
   background-color:rgba(200, 200, 200, 0.3);
   border-radius: 30px;
 }
 
 
+/* The css that governs the Hylian page */
+.hylian{
+  background-image: url("Hylianbackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* This makes it so that if you hover over the top nav Hylian tab, the font and background change */
 .hyliantop:hover{
   font-family: Hylian;
   color:black;
@@ -163,12 +115,22 @@ canvas{
   background-image:url(Hylianbackground.jpg);
   background-size: cover;
 }
+/* This gives the text a background that is faintly there, enough to see the text clearly but not completely obscure the background */
 .hylianbody{
   background-color:rgba(150, 200, 200, 0.3);
   border-radius: 30px;
 }
 
 
+
+/* The css that governs the moon page */
+.moon{
+  background-image: url("MoonBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* This makes it so that if you hover over the top nav Moon tab, the font and background change */
 .moontop:hover{
   font-family: Daedric;
   color: black;
@@ -177,18 +139,110 @@ canvas{
   background-image:url(MoonBackground.jpg);
   background-size: cover;
 }
+/* This gives the text a background that is faintly there, enough to see the text clearly but not completely obscure the background */
 .moonbody{
   background-color:rgba(300, 300, 300, 0.44);
   border-radius: 30px;
 }
 
 
+/* This is the css for the resources page. */
+.fantasy{
+  background-color: #aaa;
+}
 .fantasytop:hover{
   background-image: url("sword.jpg");
   background-size: contain;
 }
+/* The css to govern the button styling. */
+.fantasy #flex-container{
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+.fantasy  button{
+  font-size: 20px;
+  border:2px solid black ;
+  border-radius: 13px;
+  padding:20px 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fantasy button:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+/* governing the three main buttons */
+.fantasy #races{
+  background-color:coral;
+}
+.fantasy #classes{
+  background-color: steelblue;
+}
+.fantasy #spells{
+  background-color: gold;
+}
+.fantasy .disabled{
+  opacity:0.6;
+}
+.fantasy #row1{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  background-color: #999;
+}
+.fantasy #row2{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  background-color: #888;
+}
+.fantasy #row3{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  background-color: #777;
+}
+.fantasy #row4{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  background-color: #666;
+}
+.fantasy #row5{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  background-color: #555;
+}
+.fantasy p{
+  background-color: white;
+  border-radius: 10px;
+  padding:3px;
+}
+
+
 
 
 .charactertop{
   display:none;
 }
+
+/* The css that governs the main home page */
+.mainpage{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(219, 137, 150)), to(rgb(40, 76, 207)));
+  
+}
+
+@media (min-width: 900px) {
+  body > #main {
+      display:grid;
+  }
+}
+
+

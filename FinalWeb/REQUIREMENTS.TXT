@@ -38,10 +38,11 @@ at least 2 instances where you use document. querySelector or querySelectorAll
 Completed in the Nav bar alone.
  
 ajax to interact with an API
-Used for the Resources page
+Used for the Resources page 
  
 a javascript class or javascript modules
 Used for the Nav bar. 
 
 EXTRAS: 
 Frameworks: Cloud Flare
+Custom API and intigration
